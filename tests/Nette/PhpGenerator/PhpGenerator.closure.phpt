@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Test: Nette\Utils\PhpGenerator & closure.
+ * Test: Nette\PhpGenerator & closure.
  *
  * @author     David Grudl
  * @package    Nette\Utils
  * @subpackage UnitTests
  */
 
-use Nette\Utils\PhpGenerator\Method;
+use Nette\PhpGenerator\Method;
 
 
 

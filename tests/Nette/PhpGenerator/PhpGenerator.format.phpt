@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Test: Nette\Utils\PhpGenerator\Helpers::format() & formatArgs()
+ * Test: Nette\PhpGenerator\Helpers::format() & formatArgs()
  *
  * @author     David Grudl
  * @package    Nette\Utils
  * @subpackage UnitTests
  */
 
-use Nette\Utils\PhpGenerator\Helpers;
+use Nette\PhpGenerator\Helpers;
 
 
 

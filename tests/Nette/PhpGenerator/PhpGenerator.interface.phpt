@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Test: Nette\Utils\PhpGenerator for interfaces.
+ * Test: Nette\PhpGenerator for interfaces.
  *
  * @author     David Grudl
  * @package    Nette\Utils
  * @subpackage UnitTests
  */
 
-use Nette\Utils\PhpGenerator\ClassType;
+use Nette\PhpGenerator\ClassType;
 
 
 

@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Test: Nette\Utils\PhpGenerator for classes.
+ * Test: Nette\PhpGenerator for classes.
  *
  * @author     David Grudl
  * @package    Nette\Utils
  * @subpackage UnitTests
  */
 
-use Nette\Utils\PhpGenerator\ClassType,
-	Nette\Utils\PhpGenerator\PhpLiteral;
+use Nette\PhpGenerator\ClassType,
+	Nette\PhpGenerator\PhpLiteral;
 
 
 
