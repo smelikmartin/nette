@@ -4,7 +4,7 @@
  * Test: Nette\Validators\Validators::assertField()
  *
  * @author     David Grudl
- * @package    Nette\Utils
+ * @package    Nette
  * @subpackage UnitTests
  */
 

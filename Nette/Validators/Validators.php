@@ -55,7 +55,7 @@ class Validators extends Nette\Object
 
 	protected static $counters = array(
 		'string' =>  'strlen',
-		'unicode' => array('Nette\Utils\Strings', 'length'),
+		'unicode' => array('Nette\Strings', 'length'),
 		'array' => 'count',
 		'list' => 'count',
 		'alnum' => 'strlen',

@@ -4,7 +4,7 @@
  * Test: Nette\Validators\Validators::is()
  *
  * @author     David Grudl
- * @package    Nette\Utils
+ * @package    Nette
  * @subpackage UnitTests
  */
 

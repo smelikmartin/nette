@@ -125,7 +125,7 @@ class ClassType extends Nette\Object
 				. ($property->value === NULL ? '' : ' = ' . Helpers::dump($property->value))
 				. ";\n";
 		}
-		return Nette\Utils\Strings::normalize(
+		return Nette\Strings::normalize(
 			($this->documents ? str_replace("\n", "\n * ", "/**\n" . implode("\n", (array) $this->documents)) . "\n */\n" : '')
 			. ($this->abstract ? 'abstract ' : '')
 			. ($this->final ? 'final ' : '')
@@ -134,7 +134,7 @@ class ClassType extends Nette\Object
 			. ($this->extends ? 'extends ' . implode(', ', (array) $this->extends) . ' ' : '')
 			. ($this->implements ? 'implements ' . implode(', ', (array) $this->implements) . ' ' : '')
 			. "\n{\n\n"
-			. Nette\Utils\Strings::indent(
+			. Nette\Strings::indent(
 				($this->traits ? "use " . implode(', ', (array) $this->traits) . ";\n\n" : '')
 				. ($this->consts ? implode('', $consts) . "\n\n" : '')
 				. ($this->properties ? implode("\n", $properties) . "\n\n" : '')

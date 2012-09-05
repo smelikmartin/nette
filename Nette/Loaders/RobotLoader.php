@@ -12,7 +12,7 @@
 namespace Nette\Loaders;
 
 use Nette,
-	Nette\Utils\Strings,
+	Nette\Strings,
 	Nette\Caching\Cache;
 
 
@@ -106,7 +106,7 @@ class RobotLoader extends AutoLoader
 		}
 
 		if (isset($info[0])) {
-			Nette\Utils\LimitedScope::load($info[0], TRUE);
+			Nette\LimitedScope::load($info[0], TRUE);
 
 			if ($this->autoRebuild && !class_exists($type, FALSE) && !interface_exists($type, FALSE) && (PHP_VERSION_ID < 50400 || !trait_exists($type, FALSE))) {
 				$info = 0;
@@ -239,7 +239,7 @@ class RobotLoader extends AutoLoader
 					$disallow[$item] = TRUE;
 				}
 			}
-			$iterator = Nette\Utils\Finder::findFiles(is_array($this->acceptFiles) ? $this->acceptFiles : Strings::split($this->acceptFiles, '#[,\s]+#'))
+			$iterator = Nette\Finder::findFiles(is_array($this->acceptFiles) ? $this->acceptFiles : Strings::split($this->acceptFiles, '#[,\s]+#'))
 				->filter(function($file) use (&$disallow){
 					return !isset($disallow[$file->getPathname()]);
 				})
