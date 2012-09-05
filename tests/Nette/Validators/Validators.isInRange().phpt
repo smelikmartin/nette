@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Test: Nette\Utils\Validators::isInRange()
+ * Test: Nette\Validators\Validators::isInRange()
  *
  * @author     David Grudl
  * @package    Nette\Utils
  * @subpackage UnitTests
  */
 
-use Nette\Utils\Validators;
+use Nette\Validators\Validators;
 
 
 

@@ -37,6 +37,8 @@ class NetteLoader extends AutoLoader
 		'Nette\Utils\PhpGenerator\Parameter' => 'Nette\PhpGenerator\Parameter',
 		'Nette\Utils\PhpGenerator\PhpLiteral' => 'Nette\PhpGenerator\PhpLiteral',
 		'Nette\Utils\PhpGenerator\Property' => 'Nette\PhpGenerator\Property',
+		'Nette\Utils\AssertionException' => 'Nette\AssertionException',
+		'Nette\Utils\Validators' => 'Nette\Validators\Validators',
 	);
 
 	/** @var array */
@@ -51,6 +53,7 @@ class NetteLoader extends AutoLoader
 		'Nette\ArgumentOutOfRangeException' => '/common/exceptions',
 		'Nette\ArrayHash' => '/common/ArrayHash',
 		'Nette\ArrayList' => '/common/ArrayList',
+		'Nette\AssertionException' => '/common/exceptions',
 		'Nette\Callback' => '/common/Callback',
 		'Nette\DI\MissingServiceException' => '/DI/exceptions',
 		'Nette\DI\ServiceCreationException' => '/DI/exceptions',
@@ -78,7 +81,6 @@ class NetteLoader extends AutoLoader
 		'Nette\StaticClassException' => '/common/exceptions',
 		'Nette\UnexpectedValueException' => '/common/exceptions',
 		'Nette\UnknownImageFileException' => '/common/Image',
-		'Nette\Utils\AssertionException' => '/Utils/Validators',
 		'Nette\Utils\JsonException' => '/Utils/Json',
 		'Nette\Utils\NeonEntity' => '/Utils/Neon',
 		'Nette\Utils\NeonException' => '/Utils/Neon',

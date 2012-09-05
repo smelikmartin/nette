@@ -12,7 +12,7 @@
 namespace Nette\DI;
 
 use Nette,
-	Nette\Utils\Validators,
+	Nette\Validators\Validators,
 	Nette\Utils\Strings,
 	Nette\PhpGenerator\Helpers as PhpHelpers,
 	Nette\PhpGenerator\PhpLiteral;
@@ -162,7 +162,7 @@ class ContainerBuilder extends Nette\Object
 	{
 		$rc = Nette\Reflection\ClassType::from($class);
 		if (!$rc->hasMethod($method)) {
-			if (!Nette\Utils\Validators::isList($arguments)) {
+			if (!Validators::isList($arguments)) {
 				throw new ServiceCreationException("Unable to pass specified arguments to $class::$method().");
 			}
 			return $arguments;

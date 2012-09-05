@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Test: Nette\Utils\Validators::is()
+ * Test: Nette\Validators\Validators::is()
  *
  * @author     David Grudl
  * @package    Nette\Utils
  * @subpackage UnitTests
  */
 
-use Nette\Utils\Validators;
+use Nette\Validators\Validators;
 
 
 
